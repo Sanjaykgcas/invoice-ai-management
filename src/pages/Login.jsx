@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import useStore from '../store/useStore';
-import { AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Mail, Lock, ShieldCheck } from 'lucide-react';
 
 const Login = () => {
@@ -108,6 +108,11 @@ const Login = () => {
             >
               Sign In To Dashboard
             </button>
+            <div className="text-center mt-4">
+              <p className="text-xs text-gray-500">
+                Demo: <span className="text-[#D4AF37]">admin@invoice.ai</span> / <span className="text-[#D4AF37]">admin123</span>
+              </p>
+            </div>
           </form>
 
           <div className="mt-8 relative flex items-center justify-center">
