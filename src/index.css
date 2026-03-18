@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+@theme {
+  --color-black-bg: #0A0A0A;
+  --color-gold-primary: #D4AF37;
+  --color-gold-secondary: #FFD700;
+  --color-text-light: #EAEAEA;
+  --font-sans: 'Inter', 'Poppins', sans-serif;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-black-bg);
+    color: var(--color-text-light);
+    font-family: var(--font-sans);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  
+  body.theme-light {
+    --color-black-bg: #F8F9FA;
+    --color-text-light: #1A1A1A;
+  }
+
+  body.theme-light .glassmorphism {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(212, 175, 55, 0.4);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+  }
+
+  body.theme-light input, 
+  body.theme-light table, 
+  body.theme-light th, 
+  body.theme-light td {
+    color: #1A1A1A !important;
+  }
+
+  body.theme-light input::placeholder {
+    color: #888 !important;
+  }
+
+  body.theme-light .text-gray-300, 
+  body.theme-light .text-gray-400, 
+  body.theme-light .text-gray-500,
+  body.theme-light .text-white {
+    color: #4A4A4A !important;
+  }
+
+  body.theme-light .bg-black\/50, 
+  body.theme-light .bg-black\/80, 
+  body.theme-light .bg-\[\#1A1A1A\], 
+  body.theme-light .bg-black {
+    background-color: rgba(255, 255, 255, 0.6) !important;
+    border-color: #E2E8F0 !important;
+  }
+
+  body.theme-light .bg-\[\#D4AF37\]\/10 {
+    background-color: rgba(212, 175, 55, 0.15) !important;
+  }
+
+  body.theme-light .hover\:bg-white\/5:hover {
+    background-color: rgba(0, 0, 0, 0.05) !important;
+    color: #1A1A1A !important;
+  }
+
+  body.theme-light canvas {
+    opacity: 0.15 !important;
+    mix-blend-mode: multiply;
+  }
+}
+
+@layer utilities {
+  .glow-gold {
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.4), 0 0 20px rgba(212, 175, 55, 0.2);
+  }
+  .glow-gold-hover:hover {
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.6), 0 0 30px rgba(212, 175, 55, 0.3);
+  }
+  .glow-red {
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
+  }
+  .glassmorphism {
+    background: rgba(10, 10, 10, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(212, 175, 55, 0.2);
+  }
+}

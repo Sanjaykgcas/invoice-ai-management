@@ -1,0 +1,12 @@
+node_modules
+dist
+.env
+.DS_Store
+*.log
+*.txt
+*.json
+!package.json
+!package-lock.json
+!final_lint.json # Keep if needed? No actually ignore it
+!tsconfig.json # (if applicable)
+!.env.example
