@@ -1,11 +1,15 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@theme {
-  --color-black-bg: #0A0A0A;
-  --color-gold-primary: #D4AF37;
-  --color-gold-secondary: #FFD700;
-  --color-text-light: #EAEAEA;
-  --font-sans: 'Inter', 'Poppins', sans-serif;
+@layer base {
+  :root {
+    --color-black-bg: #0A0A0A;
+    --color-gold-primary: #D4AF37;
+    --color-gold-secondary: #FFD700;
+    --color-text-light: #EAEAEA;
+    --font-sans: 'Inter', 'Poppins', sans-serif;
+  }
 }
 
 @layer base {
