@@ -7,7 +7,7 @@ This application allows users to **upload, process, fix, and generate invoices**
 
 ## 🚀 Live Demo
 
-> **Status:** Deployment Pending (Vercel/Netlify)
+> **URL:** [https://invoice-ai-management.vercel.app](https://invoice-ai-management.vercel.app)
 
 ---
 
