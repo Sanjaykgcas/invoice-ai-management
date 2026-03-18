@@ -10,3 +10,5 @@ dist
 !vercel.json
 !tsconfig.json # (if applicable)
 !.env.example
+
+.vercel
